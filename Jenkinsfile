@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                branch 'main', git 'https://github.com/Juho-source/Tripcostcalc.git'
+              git branch: 'main', url: 'https://github.com/Juho-source/Tripcostcalc.git'
             }
         }
         stage('Build') {
